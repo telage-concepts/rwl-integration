@@ -1,6 +1,16 @@
+using Core.EdTech.Domain.Contexts;
+using Microsoft.EntityFrameworkCore;
+using Core.EdTech.Infrastructure.DI;
+
 var builder = WebApplication.CreateBuilder(args);
 
+var connectionString = builder.Configuration.GetConnectionString("DefaultConnection") ?? throw new InvalidOperationException("Connection string 'DefaultConnection' not found.");
+builder.Services.AddDbContext<AppDbContext>(options => options.UseMySql(connectionString, ServerVersion.AutoDetect(connectionString), b => b.MigrationsAssembly("EdtechSim"))); 
+
 // Add services to the container.
+builder.Services.ConfigHelper(options => builder.Configuration.GetSection("Providers").Bind(options));
+builder.Services.AddIdentity();
+builder.Services.AddCoreServicesDI();
 builder.Services.AddRazorPages();
 
 var app = builder.Build();

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "cg6tYipp+y1nDhe1hZa938hcBA+Pf0e3bmp5jhl0DTMlkPHnZT/qIDVVygM3IHjVzqu44qLbCyZ45QEC3wfgyw==",
+  "dgSpecHash": "veKpLV4L/SHhIW6Qg0+ymnb3OVQuTIBei8VqfIGdr8nIYratjJ8WnmWmraB9P2DmYkJTE6AutKgjRiLmlT7rog==",
   "success": true,
-  "projectFilePath": "C:\\Users\\NEWUSER\\Documents\\RWLSim\\FintechSim\\FintechSim.csproj",
+  "projectFilePath": "C:\\Users\\NEWUSER\\Documents\\GitHub\\rwl-integration\\FintechSim\\FintechSim.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\NEWUSER\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
     "C:\\Users\\NEWUSER\\.nuget\\packages\\bouncycastle.cryptography\\2.3.1\\bouncycastle.cryptography.2.3.1.nupkg.sha512",
@@ -109,9 +109,9 @@
     "C:\\Users\\NEWUSER\\.nuget\\packages\\microsoft.entityframeworkcore\\8.0.6\\microsoft.entityframeworkcore.8.0.6.nupkg.sha512",
     "C:\\Users\\NEWUSER\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\8.0.6\\microsoft.entityframeworkcore.abstractions.8.0.6.nupkg.sha512",
     "C:\\Users\\NEWUSER\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\8.0.6\\microsoft.entityframeworkcore.analyzers.8.0.6.nupkg.sha512",
-    "C:\\Users\\NEWUSER\\.nuget\\packages\\microsoft.entityframeworkcore.design\\8.0.4\\microsoft.entityframeworkcore.design.8.0.4.nupkg.sha512",
+    "C:\\Users\\NEWUSER\\.nuget\\packages\\microsoft.entityframeworkcore.design\\8.0.6\\microsoft.entityframeworkcore.design.8.0.6.nupkg.sha512",
     "C:\\Users\\NEWUSER\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\8.0.6\\microsoft.entityframeworkcore.relational.8.0.6.nupkg.sha512",
-    "C:\\Users\\NEWUSER\\.nuget\\packages\\microsoft.entityframeworkcore.tools\\8.0.4\\microsoft.entityframeworkcore.tools.8.0.4.nupkg.sha512",
+    "C:\\Users\\NEWUSER\\.nuget\\packages\\microsoft.entityframeworkcore.tools\\8.0.6\\microsoft.entityframeworkcore.tools.8.0.6.nupkg.sha512",
     "C:\\Users\\NEWUSER\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\8.0.0\\microsoft.extensions.caching.abstractions.8.0.0.nupkg.sha512",
     "C:\\Users\\NEWUSER\\.nuget\\packages\\microsoft.extensions.caching.memory\\8.0.0\\microsoft.extensions.caching.memory.8.0.0.nupkg.sha512",
     "C:\\Users\\NEWUSER\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\8.0.0\\microsoft.extensions.configuration.abstractions.8.0.0.nupkg.sha512",

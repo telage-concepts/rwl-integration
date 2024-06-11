@@ -3825,11 +3825,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\NEWUSER\\Documents\\RWLSim\\Core\\Core.csproj",
+      "projectUniqueName": "C:\\Users\\NEWUSER\\Documents\\GitHub\\rwl-integration\\Core\\Core.csproj",
       "projectName": "Core",
-      "projectPath": "C:\\Users\\NEWUSER\\Documents\\RWLSim\\Core\\Core.csproj",
+      "projectPath": "C:\\Users\\NEWUSER\\Documents\\GitHub\\rwl-integration\\Core\\Core.csproj",
       "packagesPath": "C:\\Users\\NEWUSER\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\NEWUSER\\Documents\\RWLSim\\Core\\obj\\",
+      "outputPath": "C:\\Users\\NEWUSER\\Documents\\GitHub\\rwl-integration\\Core\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

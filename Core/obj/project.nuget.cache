@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "x1ruSqNDoqoG3V3qjmuIBKtJThQFfdQnUEHrc7PPf6wXJXLd4Oog7cTNeg0jpLB18HoWszeZOUvC3H6QhwHs9A==",
+  "dgSpecHash": "gIYy2hCnQYeGNtwiqf3za9LmkMrVEwMN/Igyfw0IK7v1WjOigxN8oUblsQ5y7CNJR+FqYpFWVSP2FqOUEwVuzw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\NEWUSER\\Documents\\RWLSim\\Core\\Core.csproj",
+  "projectFilePath": "C:\\Users\\NEWUSER\\Documents\\GitHub\\rwl-integration\\Core\\Core.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\NEWUSER\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
     "C:\\Users\\NEWUSER\\.nuget\\packages\\bouncycastle.cryptography\\2.3.1\\bouncycastle.cryptography.2.3.1.nupkg.sha512",

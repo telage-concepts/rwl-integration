@@ -17,59 +17,59 @@ build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = FintechSim
 build_property.RootNamespace = FintechSim
-build_property.ProjectDir = C:\Users\NEWUSER\Documents\RWLSim\FintechSim\
+build_property.ProjectDir = C:\Users\NEWUSER\Documents\GitHub\rwl-integration\FintechSim\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\NEWUSER\Documents\RWLSim\FintechSim
+build_property.MSBuildProjectDirectory = C:\Users\NEWUSER\Documents\GitHub\rwl-integration\FintechSim
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/NEWUSER/Documents/RWLSim/FintechSim/Pages/Error.cshtml]
+[C:/Users/NEWUSER/Documents/GitHub/rwl-integration/FintechSim/Pages/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/NEWUSER/Documents/RWLSim/FintechSim/Pages/Index.cshtml]
+[C:/Users/NEWUSER/Documents/GitHub/rwl-integration/FintechSim/Pages/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/NEWUSER/Documents/RWLSim/FintechSim/Pages/Indexn.cshtml]
+[C:/Users/NEWUSER/Documents/GitHub/rwl-integration/FintechSim/Pages/Indexn.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXhuLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/NEWUSER/Documents/RWLSim/FintechSim/Pages/Login.cshtml]
+[C:/Users/NEWUSER/Documents/GitHub/rwl-integration/FintechSim/Pages/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTG9naW4uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/NEWUSER/Documents/RWLSim/FintechSim/Pages/Privacy.cshtml]
+[C:/Users/NEWUSER/Documents/GitHub/rwl-integration/FintechSim/Pages/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpdmFjeS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/NEWUSER/Documents/RWLSim/FintechSim/Pages/Register.cshtml]
+[C:/Users/NEWUSER/Documents/GitHub/rwl-integration/FintechSim/Pages/Register.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUmVnaXN0ZXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/NEWUSER/Documents/RWLSim/FintechSim/Pages/RequestVoucher.cshtml]
+[C:/Users/NEWUSER/Documents/GitHub/rwl-integration/FintechSim/Pages/RequestVoucher.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUmVxdWVzdFZvdWNoZXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/NEWUSER/Documents/RWLSim/FintechSim/Pages/Shared/_AuthLayout.cshtml]
+[C:/Users/NEWUSER/Documents/GitHub/rwl-integration/FintechSim/Pages/Shared/_AuthLayout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9BdXRoTGF5b3V0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/NEWUSER/Documents/RWLSim/FintechSim/Pages/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/NEWUSER/Documents/GitHub/rwl-integration/FintechSim/Pages/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/NEWUSER/Documents/RWLSim/FintechSim/Pages/_ViewImports.cshtml]
+[C:/Users/NEWUSER/Documents/GitHub/rwl-integration/FintechSim/Pages/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/NEWUSER/Documents/RWLSim/FintechSim/Pages/_ViewStart.cshtml]
+[C:/Users/NEWUSER/Documents/GitHub/rwl-integration/FintechSim/Pages/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/NEWUSER/Documents/RWLSim/FintechSim/Pages/Shared/_Layout.cshtml]
+[C:/Users/NEWUSER/Documents/GitHub/rwl-integration/FintechSim/Pages/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-s339g0cb4u
