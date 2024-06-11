@@ -1,0 +1,15 @@
+@page
+@model FintechSim.Pages.IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div>
+
+    <form method="post">
+        <input asp-for="@Model.pageVM.CourseCode" placeholder="Course Code"></input>
+        <input asp-for="@Model.pageVM.MemberId" value="@Model.MemberId" type="hidden"/>
+        <input type="submit" value="Find"/>
+    </form>
+
+</div>

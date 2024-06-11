@@ -1,0 +1,20 @@
+@page
+@model IndexnModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+
+<div>
+  <form method="post">
+    <input asp-for="@Model.IndexPageVM.Email" placeholder="Email"/>
+    <input asp-for="@Model.IndexPageVM.FirstName" placeholder="First name"/>
+    <input asp-for="@Model.IndexPageVM.LastName" placeholder="Last name"/>
+    <input asp-for="@Model.IndexPageVM.PhoneNumber" placeholder="Phone Number"/>
+    <input type="submit" value="Initialize"/>
+  </form>
+</div>

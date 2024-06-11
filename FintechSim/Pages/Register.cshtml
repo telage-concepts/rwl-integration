@@ -1,0 +1,57 @@
+@page
+@model FintechSim.Pages.RegisterModel
+@{
+    Layout = "_AuthLayout";
+    ViewData["Title"] = "Sign Up";
+}
+
+
+	
+	<div class="limiter">
+		<div class="container-login100">
+			<div class="wrap-login100">
+				<form class="login100-form validate-form p-l-55 p-r-55 p-t-178" method="post">
+					<span class="login100-form-title">
+						Sign Up
+					</span>
+
+					<div class="wrap-input100 validate-input m-b-16" data-validate="Please enter firstname">
+						<input class="input100" asp-for="RegistrationVM.UserProfile.FirstName" placeholder="First Name">
+						<span class="focus-input100"></span>
+					</div>
+
+                <div class="wrap-input100 validate-input m-b-16" data-validate="Please enter lastname">
+						<input class="input100" asp-for="RegistrationVM.UserProfile.LastName" placeholder="Last Name">
+						<span class="focus-input100"></span>
+					</div>
+					<div class="wrap-input100 validate-input m-b-16" data-validate = "Please enter password">
+						<input class="input100" asp-for="RegistrationVM.Input.Email" placeholder="Email">
+						<span class="focus-input100"></span>
+					</div>
+					<div class="wrap-input100 validate-input m-b-16" data-validate = "Please enter password">
+						<input class="input100" asp-for="RegistrationVM.UserProfile.PhoneNumber" placeholder="+234xxxxxxxxxx">
+						<span class="focus-input100"></span>
+					</div>
+					<div class="wrap-input100 validate-input m-b-16" data-validate = "Date of Birth">
+						<input class="input100" asp-for="RegistrationVM.UserProfile.DateOfBirth">
+						<span class="focus-input100"></span>
+					</div>
+					<div class="wrap-input100 validate-input m-b-16" data-validate = "Please enter password">
+						<input class="input100" asp-for="RegistrationVM.Input.Password" placeholder="Password">
+						<span class="focus-input100"></span>
+					</div>
+					<div class="wrap-input100 validate-input m-b-16" data-validate = "Please enter password again">
+						<input class="input100" asp-for="RegistrationVM.Input.ConfirmPassword" placeholder="Confirm Password">
+						<span class="focus-input100"></span>
+					</div>
+
+					<div class="container-login100-form-btn">
+						<button class="login100-form-btn">
+							Sign Up
+						</button>
+					</div>
+
+				</form>
+			</div>
+		</div>
+	</div>
