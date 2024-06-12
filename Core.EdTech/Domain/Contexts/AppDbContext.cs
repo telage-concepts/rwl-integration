@@ -37,6 +37,7 @@ namespace Core.EdTech.Domain.Contexts
     public DbSet<Enrollment> Enrollments { get; set; }
     public DbSet<Course> Courses { get; set; }
     public DbSet<Voucher> Vouchers { get; set; }
+    public DbSet<DiscountWallet> DiscountWallets { get; set; }
     #endregion
   }
 }

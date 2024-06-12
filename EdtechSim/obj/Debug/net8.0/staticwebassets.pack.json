@@ -5,6 +5,14 @@
       "PackagePath": "staticwebassets\\EdtechSim.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\NEWUSER\\Documents\\GitHub\\rwl-integration\\EdtechSim\\wwwroot\\css\\auth_main.css",
+      "PackagePath": "staticwebassets\\css\\auth_main.css"
+    },
+    {
+      "Id": "C:\\Users\\NEWUSER\\Documents\\GitHub\\rwl-integration\\EdtechSim\\wwwroot\\css\\auth_util.css",
+      "PackagePath": "staticwebassets\\css\\auth_util.css"
+    },
+    {
       "Id": "C:\\Users\\NEWUSER\\Documents\\GitHub\\rwl-integration\\EdtechSim\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
@@ -243,6 +251,150 @@
     {
       "Id": "C:\\Users\\NEWUSER\\Documents\\GitHub\\rwl-integration\\EdtechSim\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "C:\\Users\\NEWUSER\\Documents\\GitHub\\rwl-integration\\EdtechSim\\wwwroot\\vendor\\animate\\animate.css",
+      "PackagePath": "staticwebassets\\vendor\\animate\\animate.css"
+    },
+    {
+      "Id": "C:\\Users\\NEWUSER\\Documents\\GitHub\\rwl-integration\\EdtechSim\\wwwroot\\vendor\\animsition\\css\\animsition.css",
+      "PackagePath": "staticwebassets\\vendor\\animsition\\css\\animsition.css"
+    },
+    {
+      "Id": "C:\\Users\\NEWUSER\\Documents\\GitHub\\rwl-integration\\EdtechSim\\wwwroot\\vendor\\animsition\\css\\animsition.min.css",
+      "PackagePath": "staticwebassets\\vendor\\animsition\\css\\animsition.min.css"
+    },
+    {
+      "Id": "C:\\Users\\NEWUSER\\Documents\\GitHub\\rwl-integration\\EdtechSim\\wwwroot\\vendor\\animsition\\js\\animsition.js",
+      "PackagePath": "staticwebassets\\vendor\\animsition\\js\\animsition.js"
+    },
+    {
+      "Id": "C:\\Users\\NEWUSER\\Documents\\GitHub\\rwl-integration\\EdtechSim\\wwwroot\\vendor\\animsition\\js\\animsition.min.js",
+      "PackagePath": "staticwebassets\\vendor\\animsition\\js\\animsition.min.js"
+    },
+    {
+      "Id": "C:\\Users\\NEWUSER\\Documents\\GitHub\\rwl-integration\\EdtechSim\\wwwroot\\vendor\\bootstrap\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\vendor\\bootstrap\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "C:\\Users\\NEWUSER\\Documents\\GitHub\\rwl-integration\\EdtechSim\\wwwroot\\vendor\\bootstrap\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\vendor\\bootstrap\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "C:\\Users\\NEWUSER\\Documents\\GitHub\\rwl-integration\\EdtechSim\\wwwroot\\vendor\\bootstrap\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\vendor\\bootstrap\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "C:\\Users\\NEWUSER\\Documents\\GitHub\\rwl-integration\\EdtechSim\\wwwroot\\vendor\\bootstrap\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\vendor\\bootstrap\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\NEWUSER\\Documents\\GitHub\\rwl-integration\\EdtechSim\\wwwroot\\vendor\\bootstrap\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\vendor\\bootstrap\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "C:\\Users\\NEWUSER\\Documents\\GitHub\\rwl-integration\\EdtechSim\\wwwroot\\vendor\\bootstrap\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\vendor\\bootstrap\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "C:\\Users\\NEWUSER\\Documents\\GitHub\\rwl-integration\\EdtechSim\\wwwroot\\vendor\\bootstrap\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\vendor\\bootstrap\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "C:\\Users\\NEWUSER\\Documents\\GitHub\\rwl-integration\\EdtechSim\\wwwroot\\vendor\\bootstrap\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\vendor\\bootstrap\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\NEWUSER\\Documents\\GitHub\\rwl-integration\\EdtechSim\\wwwroot\\vendor\\bootstrap\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\vendor\\bootstrap\\css\\bootstrap.css"
+    },
+    {
+      "Id": "C:\\Users\\NEWUSER\\Documents\\GitHub\\rwl-integration\\EdtechSim\\wwwroot\\vendor\\bootstrap\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\vendor\\bootstrap\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "C:\\Users\\NEWUSER\\Documents\\GitHub\\rwl-integration\\EdtechSim\\wwwroot\\vendor\\bootstrap\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\vendor\\bootstrap\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\NEWUSER\\Documents\\GitHub\\rwl-integration\\EdtechSim\\wwwroot\\vendor\\bootstrap\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\vendor\\bootstrap\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\NEWUSER\\Documents\\GitHub\\rwl-integration\\EdtechSim\\wwwroot\\vendor\\bootstrap\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\vendor\\bootstrap\\js\\bootstrap.js"
+    },
+    {
+      "Id": "C:\\Users\\NEWUSER\\Documents\\GitHub\\rwl-integration\\EdtechSim\\wwwroot\\vendor\\bootstrap\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\vendor\\bootstrap\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\NEWUSER\\Documents\\GitHub\\rwl-integration\\EdtechSim\\wwwroot\\vendor\\bootstrap\\js\\popper.js",
+      "PackagePath": "staticwebassets\\vendor\\bootstrap\\js\\popper.js"
+    },
+    {
+      "Id": "C:\\Users\\NEWUSER\\Documents\\GitHub\\rwl-integration\\EdtechSim\\wwwroot\\vendor\\bootstrap\\js\\popper.min.js",
+      "PackagePath": "staticwebassets\\vendor\\bootstrap\\js\\popper.min.js"
+    },
+    {
+      "Id": "C:\\Users\\NEWUSER\\Documents\\GitHub\\rwl-integration\\EdtechSim\\wwwroot\\vendor\\bootstrap\\js\\tooltip.js",
+      "PackagePath": "staticwebassets\\vendor\\bootstrap\\js\\tooltip.js"
+    },
+    {
+      "Id": "C:\\Users\\NEWUSER\\Documents\\GitHub\\rwl-integration\\EdtechSim\\wwwroot\\vendor\\countdowntime\\countdowntime.js",
+      "PackagePath": "staticwebassets\\vendor\\countdowntime\\countdowntime.js"
+    },
+    {
+      "Id": "C:\\Users\\NEWUSER\\Documents\\GitHub\\rwl-integration\\EdtechSim\\wwwroot\\vendor\\css-hamburgers\\hamburgers.css",
+      "PackagePath": "staticwebassets\\vendor\\css-hamburgers\\hamburgers.css"
+    },
+    {
+      "Id": "C:\\Users\\NEWUSER\\Documents\\GitHub\\rwl-integration\\EdtechSim\\wwwroot\\vendor\\css-hamburgers\\hamburgers.min.css",
+      "PackagePath": "staticwebassets\\vendor\\css-hamburgers\\hamburgers.min.css"
+    },
+    {
+      "Id": "C:\\Users\\NEWUSER\\Documents\\GitHub\\rwl-integration\\EdtechSim\\wwwroot\\vendor\\daterangepicker\\daterangepicker.css",
+      "PackagePath": "staticwebassets\\vendor\\daterangepicker\\daterangepicker.css"
+    },
+    {
+      "Id": "C:\\Users\\NEWUSER\\Documents\\GitHub\\rwl-integration\\EdtechSim\\wwwroot\\vendor\\daterangepicker\\daterangepicker.js",
+      "PackagePath": "staticwebassets\\vendor\\daterangepicker\\daterangepicker.js"
+    },
+    {
+      "Id": "C:\\Users\\NEWUSER\\Documents\\GitHub\\rwl-integration\\EdtechSim\\wwwroot\\vendor\\daterangepicker\\moment.js",
+      "PackagePath": "staticwebassets\\vendor\\daterangepicker\\moment.js"
+    },
+    {
+      "Id": "C:\\Users\\NEWUSER\\Documents\\GitHub\\rwl-integration\\EdtechSim\\wwwroot\\vendor\\daterangepicker\\moment.min.js",
+      "PackagePath": "staticwebassets\\vendor\\daterangepicker\\moment.min.js"
+    },
+    {
+      "Id": "C:\\Users\\NEWUSER\\Documents\\GitHub\\rwl-integration\\EdtechSim\\wwwroot\\vendor\\jquery\\jquery-3.2.1.min.js",
+      "PackagePath": "staticwebassets\\vendor\\jquery\\jquery-3.2.1.min.js"
+    },
+    {
+      "Id": "C:\\Users\\NEWUSER\\Documents\\GitHub\\rwl-integration\\EdtechSim\\wwwroot\\vendor\\perfect-scrollbar\\perfect-scrollbar.css",
+      "PackagePath": "staticwebassets\\vendor\\perfect-scrollbar\\perfect-scrollbar.css"
+    },
+    {
+      "Id": "C:\\Users\\NEWUSER\\Documents\\GitHub\\rwl-integration\\EdtechSim\\wwwroot\\vendor\\perfect-scrollbar\\perfect-scrollbar.min.js",
+      "PackagePath": "staticwebassets\\vendor\\perfect-scrollbar\\perfect-scrollbar.min.js"
+    },
+    {
+      "Id": "C:\\Users\\NEWUSER\\Documents\\GitHub\\rwl-integration\\EdtechSim\\wwwroot\\vendor\\select2\\select2.css",
+      "PackagePath": "staticwebassets\\vendor\\select2\\select2.css"
+    },
+    {
+      "Id": "C:\\Users\\NEWUSER\\Documents\\GitHub\\rwl-integration\\EdtechSim\\wwwroot\\vendor\\select2\\select2.js",
+      "PackagePath": "staticwebassets\\vendor\\select2\\select2.js"
+    },
+    {
+      "Id": "C:\\Users\\NEWUSER\\Documents\\GitHub\\rwl-integration\\EdtechSim\\wwwroot\\vendor\\select2\\select2.min.css",
+      "PackagePath": "staticwebassets\\vendor\\select2\\select2.min.css"
+    },
+    {
+      "Id": "C:\\Users\\NEWUSER\\Documents\\GitHub\\rwl-integration\\EdtechSim\\wwwroot\\vendor\\select2\\select2.min.js",
+      "PackagePath": "staticwebassets\\vendor\\select2\\select2.min.js"
     },
     {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.EdtechSim.Microsoft.AspNetCore.StaticWebAssets.props",

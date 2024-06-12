@@ -1,7 +1,8 @@
-﻿@page
+@page
 @model IndexModel
 @{
     ViewData["Title"] = "Home page";
+    ViewData["WalletBalance"] = Model.wallet.Balance;
 }
 
 <div class="text-center">

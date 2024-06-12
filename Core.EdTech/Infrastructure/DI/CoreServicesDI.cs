@@ -14,6 +14,7 @@ namespace Core.EdTech.Infrastructure.DI
             services.AddTransient(typeof(IUnitOfWork<>), typeof(UnitOfWork<>));
             services.AddTransient<IAuthenticationService, AuthenticationService>();
             services.AddTransient<IMailService, MailService>();
+            services.AddTransient<IRWLService, RWLService>();
 
             return services;
         }
