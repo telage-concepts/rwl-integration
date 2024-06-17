@@ -33,7 +33,7 @@ namespace FintechSim.Pages
         PhoneNumber = IndexPageVM.PhoneNumber
       });
 
-      return RedirectToPage("/FindCourse", new { RwlMemberId = init_response.RwlMemberId});
+      return RedirectToPage();
     }
   }
 }

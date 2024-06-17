@@ -3,6 +3,7 @@ namespace Core.FinTech.Infrastructure.Helpers.AppSettings
     public class ConfigProviders
     {
         public required MailSettings MailSettings { get; set; }
+        public required RWLParams RWLParams { get; set; }
     }
 
 
@@ -16,4 +17,10 @@ namespace Core.FinTech.Infrastructure.Helpers.AppSettings
       public string Password { get; set; }
     }
 
+    public class RWLParams
+    {
+      public string BaseUrl { get; set; }
+      public string ApiKey {  get; set; }
+      public string ApiSecret { get; set; }
+    }
 }

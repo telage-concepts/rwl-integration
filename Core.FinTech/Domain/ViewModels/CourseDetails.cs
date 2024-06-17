@@ -10,15 +10,21 @@ namespace Core.FinTech.Domain.ViewModels
 {
   public class CourseDetails
   {
-    [JsonPropertyName("program_name")]
-    public string ProgramName { get; set; }
-    [JsonPropertyName("program_code")]
-    public string ProgramCode { get; set; }
-    [JsonPropertyName("program_image")]
-    public string ProgramImage { get; set; }
-    [JsonPropertyName("program_fee")]
-    public decimal ProgramFee { get; set; }
-    [JsonPropertyName("member_id")]
-    public string MemberId { get; set; }
+    [JsonPropertyName("message")]
+    public string Message { get; set; }
+    [JsonPropertyName("data")]
+    public ClassData Data { get; set; }
+
+    public class ClassData
+    {
+      [JsonPropertyName("program_name")]
+      public string ProgramName { get; set; }
+      [JsonPropertyName("program_code")]
+      public string ProgramCode { get; set; }
+      [JsonPropertyName("program_image")]
+      public string ProgramImage { get; set; }
+      [JsonPropertyName("program_fee")]
+      public string ProgramFee { get; set; }
+    }
   }
 }

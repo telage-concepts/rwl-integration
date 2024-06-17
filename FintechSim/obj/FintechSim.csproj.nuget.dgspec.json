@@ -168,6 +168,10 @@
             "OpenIddict.Abstractions": {
               "target": "Package",
               "version": "[5.6.0, )"
+            },
+            "RestSharp": {
+              "target": "Package",
+              "version": "[111.2.0, )"
             }
           },
           "imports": [

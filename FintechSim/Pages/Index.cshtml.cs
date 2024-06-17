@@ -16,7 +16,7 @@ namespace FintechSim.Pages
         private readonly IRWLService _rdfService;
         private readonly IUnitOfWork<UserProfile> unitOfWork;
         private readonly UserManager<ApplicationUser> userManager;
-        public string MemberId { get; set; }
+        public int MemberId { get; set; }
         public UserProfile UserProfile { get; set; }
 
     public IndexModel(IRWLService rdfService, IUnitOfWork<UserProfile> unitOfWork, UserManager<ApplicationUser> userManager)
@@ -40,19 +40,24 @@ namespace FintechSim.Pages
             var user = await userManager.GetUserAsync(User);
             UserProfile = unitOfWork.Repository.Get(x => x.Email == user.Email).First();
             if (UserProfile.RwlMemberId == null) {
-                UserProfile.RwlMemberId = (await _rdfService.Initialize(new RWLUserDetail
+                var temp = await _rdfService.Initialize(new RWLUserDetail
                 {
                   Email = UserProfile.Email,
                   FirstName = UserProfile.FirstName,
                   LastName = UserProfile.LastName,
                   PhoneNumber = UserProfile.PhoneNumber
-                })).RwlMemberId;
+                });
+                Console.WriteLine("");
+                Console.WriteLine("RWL Member ID : {0}", temp.Data.RwlMemberId);
+                Console.WriteLine("");
+
+                UserProfile.RwlMemberId = temp.Data.RwlMemberId;
 
                 unitOfWork.Repository.Update(UserProfile);
                 await unitOfWork.SaveAsync();
             }
             var data = await _rdfService.GetCourseDetails(pageVM.CourseCode);
-            return RedirectToPage("RequestVoucher", data);
+            return RedirectToPage("RequestVoucher", data.Data);
         }
 
         public class PageVM

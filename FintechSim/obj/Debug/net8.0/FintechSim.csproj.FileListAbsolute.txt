@@ -563,3 +563,4 @@ C:\Users\NEWUSER\Documents\GitHub\rwl-integration\FintechSim\bin\Debug\net8.0\Co
 C:\Users\NEWUSER\Documents\GitHub\rwl-integration\FintechSim\bin\Debug\net8.0\Core.FinTech.dll
 C:\Users\NEWUSER\Documents\GitHub\rwl-integration\FintechSim\bin\Debug\net8.0\Core.FinTech.pdb
 C:\Users\NEWUSER\Documents\GitHub\rwl-integration\FintechSim\bin\Debug\net8.0\Core.Common.pdb
+C:\Users\NEWUSER\Documents\GitHub\rwl-integration\FintechSim\bin\Debug\net8.0\RestSharp.dll

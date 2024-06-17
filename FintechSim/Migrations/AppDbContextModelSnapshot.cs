@@ -235,8 +235,8 @@ namespace FintechSim.Migrations
                         .HasMaxLength(32)
                         .HasColumnType("varchar(32)");
 
-                    b.Property<string>("RwlMemberId")
-                        .HasColumnType("longtext");
+                    b.Property<int?>("RwlMemberId")
+                        .HasColumnType("int");
 
                     b.HasKey("Id");
 

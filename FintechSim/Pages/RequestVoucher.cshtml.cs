@@ -25,9 +25,13 @@ namespace FintechSim.Pages {
     }
 
     public string BaseUrl { get; set; }
-        public CourseDetails Data { get; set; }
+        public CourseDetails.ClassData Data { get; set; }
         public UserProfile UserProfile { get; set; }
-        public async Task<IActionResult> OnGetAsync(CourseDetails data)
+        public string ProgramImage { get; set; }
+        public string ProgramFee { get; set; }
+        public string ProgramName { get; set; }
+        public string ProgramCode { get; set; }
+        public async Task<IActionResult> OnGetAsync(CourseDetails.ClassData data)
         {
           var user = await userManager.GetUserAsync(User);
           UserProfile = unitOfWork.Repository.Get(x => x.Email == user.Email).FirstOrDefault();

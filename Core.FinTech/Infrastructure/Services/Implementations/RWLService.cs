@@ -1,11 +1,22 @@
 using Core.FinTech.Domain.ViewModels;
+using Core.FinTech.Infrastructure.Helpers.AppSettings;
 using Core.FinTech.Infrastructure.Services.Abstracts;
 using Newtonsoft.Json;
+using RestSharp;
+using System.Security.Cryptography;
+using System.Text;
 
 namespace Core.FinTech.Infrastructure.Services.Implementations
 {
   public class RWLService : IRWLService
   {
+    private readonly ConfigOptions configOptions;
+
+    public RWLService(ConfigOptions configOptions)
+    {
+      this.configOptions = configOptions;
+    }
+
     public Task<bool> AcceptVoucher()
     {
       throw new NotImplementedException();
@@ -23,23 +34,51 @@ namespace Core.FinTech.Infrastructure.Services.Implementations
 
     public async Task<CourseDetails> GetCourseDetails(string ProgramCode)
     {
-      var data = new CourseDetails
+      var client = new RestClient(configOptions.RWLParams.BaseUrl);
+      var requestToken = new Guid();
+      Dictionary<string, string> headers = new();
+      headers.Add("api-key", configOptions.RWLParams.ApiKey);
+      headers.Add("hash", GenerateMD5($"{configOptions.RWLParams.ApiKey}{configOptions.RWLParams.ApiSecret}{requestToken.ToString()}"));
+      headers.Add("request-token", requestToken.ToString());
+      client.AddDefaultHeaders(headers);
+
+      var request = new RestRequest($"/request-program-details/{ProgramCode}");
+
+      var response = await client.GetAsync(request);
+
+      if (!response.IsSuccessful || response.Content == null)
       {
-        ProgramName = "creating tech social club",
-        ProgramCode = "BLP-9269YXD9901",
-        ProgramImage = "https://res.cloudinary.com/kenrealtor/image/upload/v1712063277/cjisievpo2u0u7nakkil.jpg",
-        ProgramFee = 150000
-      };
-      return data;
+        //Log Error
+        return default;
+      }
+
+      return System.Text.Json.JsonSerializer.Deserialize<CourseDetails>(response.Content);
     }
 
     public async Task<RWLInitResponse> Initialize(RWLUserDetail UserDetails)
     {
-      var requestData = JsonConvert.SerializeObject(UserDetails);
-      return new RWLInitResponse
-      {
-        RwlMemberId = "1075EIN5588"
-      };
+
+      var client = new RestClient(configOptions.RWLParams.BaseUrl);
+      var requestToken = new Guid();
+      Dictionary<string, string> headers = new();
+      headers.Add("api-key", configOptions.RWLParams.ApiKey);
+      headers.Add("hash", GenerateMD5($"{configOptions.RWLParams.ApiKey}{configOptions.RWLParams.ApiSecret}{requestToken.ToString()}"));
+      headers.Add("request-token", requestToken.ToString());
+
+      client.AddDefaultHeaders(headers);
+
+      var request = new RestRequest("/init");
+      request.AddHeader("content-type", "application/json");
+      request.AddBody(System.Text.Json.JsonSerializer.Serialize(UserDetails));
+
+      var response = await client.PostAsync(request);
+
+
+      Console.WriteLine("");
+      Console.WriteLine($"Content : {response.Content}");
+      Console.WriteLine("");
+
+      return System.Text.Json.JsonSerializer.Deserialize<RWLInitResponse>(response.Content);
     }
 
     public Task RedeemPoints(RedeemPointsParams redeemPointsParams)
@@ -47,9 +86,35 @@ namespace Core.FinTech.Infrastructure.Services.Implementations
       throw new NotImplementedException();
     }
 
-    public Task<bool> RequestVoucher(RequestVoucherParams requestVoucherParams)
+    public async Task<bool> RequestVoucher(RequestVoucherParams requestVoucherParams)
     {
-      throw new NotImplementedException();
+
+      var client = new RestClient(configOptions.RWLParams.BaseUrl);
+      var requestToken = new Guid();
+      Dictionary<string, string> headers = new();
+      headers.Add("api-key", configOptions.RWLParams.ApiKey);
+      headers.Add("hash", GenerateMD5($"{configOptions.RWLParams.ApiKey}{configOptions.RWLParams.ApiSecret}{requestToken.ToString()}"));
+      headers.Add("request-token", requestToken.ToString());
+      client.AddDefaultHeaders(headers);
+
+      var request = new RestRequest("/request-voucher");
+      request.AddHeader("content-type", "application/json");
+      request.AddBody(System.Text.Json.JsonSerializer.Serialize(requestVoucherParams));
+
+      var response = await client.PostAsync(request);
+
+      if (!response.IsSuccessful)
+      {
+        //Log Error
+        return false;
+      }
+
+      return true;
+    }
+
+    private string GenerateMD5(string yourString)
+    {
+      return string.Join("", MD5.Create().ComputeHash(Encoding.ASCII.GetBytes(yourString)).Select(s => s.ToString("x2")));
     }
   }
 }

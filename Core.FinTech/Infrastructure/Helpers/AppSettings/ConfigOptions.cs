@@ -11,5 +11,6 @@ namespace Core.FinTech.Infrastructure.Helpers.AppSettings
             this.config = config;
         }
         public MailSettings MailSettings => config.Value.MailSettings;
+        public RWLParams RWLParams => config.Value.RWLParams;
   }
 }

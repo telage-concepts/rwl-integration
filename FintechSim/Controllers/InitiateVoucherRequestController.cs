@@ -9,7 +9,7 @@ namespace FintechSim.Controllers
   public class InitiateVoucherRequestController : ControllerBase
   {
     // GET: api/<InitiateVoucherRequestController>
-    public ActionResult Index(string RwlMemberId, string RwlProgramCode, string Reference)
+    public ActionResult Index(string RwlProgramCode, string Reference)
     {
       return Ok(new { Status = true });
     }

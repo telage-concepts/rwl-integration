@@ -18,7 +18,8 @@
           "Microsoft.Extensions.DependencyInjection": "8.0.0",
           "MimeKit": "4.6.0",
           "Newtonsoft.Json": "13.0.3",
-          "OpenIddict.Abstractions": "5.6.0"
+          "OpenIddict.Abstractions": "5.6.0",
+          "RestSharp": "111.2.0"
         },
         "runtime": {
           "Core.FinTech.dll": {}
@@ -838,6 +839,14 @@
           }
         }
       },
+      "RestSharp/111.2.0": {
+        "runtime": {
+          "lib/net8.0/RestSharp.dll": {
+            "assemblyVersion": "111.2.0.0",
+            "fileVersion": "111.2.0.0"
+          }
+        }
+      },
       "System.Buffers/4.5.0": {},
       "System.CodeDom/4.4.0": {
         "runtime": {
@@ -1421,6 +1430,13 @@
       "sha512": "sha512-ElNavuZtWZy+hoUB3s8BCbCZaZ2Je6jzTCrHmiIAgKTEgF3jWwNQ3iqIH+uRQXkQ9imgnpmQlLlsX/YVUfpNAQ==",
       "path": "openiddict.abstractions/5.6.0",
       "hashPath": "openiddict.abstractions.5.6.0.nupkg.sha512"
+    },
+    "RestSharp/111.2.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-OkWr6AGM0zirdkRpxVOxXMWx9OHEIWrDzrpx1XIx5KyvTcmtjJVsKBscVkYTcFerhj5w5Bny7boRIV4a0ENGaQ==",
+      "path": "restsharp/111.2.0",
+      "hashPath": "restsharp.111.2.0.nupkg.sha512"
     },
     "System.Buffers/4.5.0": {
       "type": "package",

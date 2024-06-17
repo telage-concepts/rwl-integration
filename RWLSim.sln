@@ -7,11 +7,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EdtechSim", "EdtechSim\Edte
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FintechSim", "FintechSim\FintechSim.csproj", "{60542242-7467-4959-9677-CD788621F793}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Core.Common", "Core.Common\Core.Common.csproj", "{BA16854F-4CAB-4447-881F-905443B40A85}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Core.Common", "Core.Common\Core.Common.csproj", "{BA16854F-4CAB-4447-881F-905443B40A85}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Core.EdTech", "Core.EdTech\Core.EdTech.csproj", "{E53B17D4-602E-4476-B58B-C0B7C92521C6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Core.EdTech", "Core.EdTech\Core.EdTech.csproj", "{E53B17D4-602E-4476-B58B-C0B7C92521C6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Core.FinTech", "Core.FinTech\Core.FinTech.csproj", "{2FE19306-3513-41D7-8AE4-721059D2408B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Core.FinTech", "Core.FinTech\Core.FinTech.csproj", "{2FE19306-3513-41D7-8AE4-721059D2408B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

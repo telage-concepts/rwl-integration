@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "I38kPjADUEHxJK8Cwri1IO2lt4A1Vbqei3UY2nHfGwmhEnlHE7NKhrdnKi5JRYE8EX742v9ixeG8EDt5BZ1wjg==",
+  "dgSpecHash": "8wvET+KynxYhB+wSHY/xyCuLJrMG+kseh5J8rz/inJLJ78MjJYjVTMSFXLWgHk+2VJzua9rehZBizRjmc/Plsw==",
   "success": true,
   "projectFilePath": "C:\\Users\\NEWUSER\\Documents\\GitHub\\rwl-integration\\Core.EdTech\\Core.EdTech.csproj",
   "expectedPackageFiles": [
@@ -63,6 +63,7 @@
     "C:\\Users\\NEWUSER\\.nuget\\packages\\mono.texttemplating\\2.2.1\\mono.texttemplating.2.2.1.nupkg.sha512",
     "C:\\Users\\NEWUSER\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
     "C:\\Users\\NEWUSER\\.nuget\\packages\\openiddict.abstractions\\5.6.0\\openiddict.abstractions.5.6.0.nupkg.sha512",
+    "C:\\Users\\NEWUSER\\.nuget\\packages\\restsharp\\111.2.0\\restsharp.111.2.0.nupkg.sha512",
     "C:\\Users\\NEWUSER\\.nuget\\packages\\system.buffers\\4.5.0\\system.buffers.4.5.0.nupkg.sha512",
     "C:\\Users\\NEWUSER\\.nuget\\packages\\system.codedom\\4.4.0\\system.codedom.4.4.0.nupkg.sha512",
     "C:\\Users\\NEWUSER\\.nuget\\packages\\system.collections.immutable\\6.0.0\\system.collections.immutable.6.0.0.nupkg.sha512",
