@@ -1,4 +1,5 @@
 using Microsoft.Extensions.Options;
+using System.Security.Cryptography.X509Certificates;
 
 namespace Core.FinTech.Infrastructure.Helpers.AppSettings
 {
@@ -12,5 +13,6 @@ namespace Core.FinTech.Infrastructure.Helpers.AppSettings
         }
         public MailSettings MailSettings => config.Value.MailSettings;
         public RWLParams RWLParams => config.Value.RWLParams;
+        public Paystack Paystack => config.Value.Paystack;
   }
 }

@@ -4,6 +4,7 @@ namespace Core.FinTech.Infrastructure.Helpers.AppSettings
     {
         public required MailSettings MailSettings { get; set; }
         public required RWLParams RWLParams { get; set; }
+        public required Paystack Paystack { get; set; }
     }
 
 
@@ -22,5 +23,11 @@ namespace Core.FinTech.Infrastructure.Helpers.AppSettings
       public string BaseUrl { get; set; }
       public string ApiKey {  get; set; }
       public string ApiSecret { get; set; }
+    }
+
+    public class Paystack
+    {
+      public string PublicKey { get; set; }
+      public string SecretKey { get; set; }
     }
 }

@@ -85,7 +85,7 @@
                     var reference = response.reference;
 
                     const base_url = "@Model.BaseUrl"
-                    const response2 = fetch(`${base_url}/api/InitiateVoucherRequest?RwlProgramCode=@(Model.Data.ProgramCode)&Reference=${reference}`);
+                    const response2 = fetch(`${base_url}/api/InitiateVoucherRequest?RwlProgramCode=@(Model.Data.ProgramCode)&Reference=${reference}&MemberId=@Model.UserProfile.RwlMemberId`);
                 }
             });
 
