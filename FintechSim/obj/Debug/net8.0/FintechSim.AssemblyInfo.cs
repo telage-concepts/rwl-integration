@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("FintechSim")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0c2d381fee41c2aaf608492653d182a0b3bd8945")]
 [assembly: System.Reflection.AssemblyProductAttribute("FintechSim")]
 [assembly: System.Reflection.AssemblyTitleAttribute("FintechSim")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
