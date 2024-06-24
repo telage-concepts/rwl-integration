@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Core.EdTech.Domain.Entities
+namespace Core.FinTech.Domain.Entities
 {
   public class DiscountWallet : EntityBase
   {

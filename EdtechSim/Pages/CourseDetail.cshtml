@@ -1,0 +1,47 @@
+@page 
+@model EdtechSim.Pages.CourseDetailModel
+@{
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Course</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Course.Name)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Course.Name)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Course.Price)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Course.Price)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Course.ImageUrl)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Course.ImageUrl)
+        </dd>
+        <dt class="col-sm-2" >
+            <form method="post">
+                <input type="submit" class="btn btn-success" value="Buy Course" />
+            </form>
+        </dt>
+        <dd class="col-sm-10">
+          <form method="post" asp-page-handler="GetDiscount">
+                <input type="hidden" asp-for="CourseId" value="@Model.Course.Id" />
+                <input type="submit" class="btn btn-primary" value="Buy Course with RWL Discount" />
+          </form>
+        </dd>
+
+    </dl>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>

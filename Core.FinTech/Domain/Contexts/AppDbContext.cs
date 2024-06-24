@@ -36,6 +36,7 @@ namespace Core.FinTech.Domain.Contexts
     public DbSet<UserProfile> UserProfiles { get; set; }
     public DbSet<Pouch> Pouches { get; set; }
     public DbSet<Request> Requests { get; set; }
+    public DbSet<DiscountWallet> DiscountWallets { get; set; }
     #endregion
   }
 }

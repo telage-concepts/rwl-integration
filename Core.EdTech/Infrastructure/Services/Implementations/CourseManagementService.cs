@@ -32,7 +32,7 @@ namespace Core.EdTech.Infrastructure.Services.Implementations
 
     public async  Task<List<Course>> GetCourses()
     {
-      return unitOfWork.Repository.Get().ToList();
+      return unitOfWork.Repository.Get(x => true).ToList();
     }
 
     public async  Task RemoveCourse(Guid Id)

@@ -1,3 +1,5 @@
+using Core.FinTech.Domain.DataAccess.Interfaces;
+using Core.FinTech.Domain.Entities;
 using Core.FinTech.Domain.ViewModels;
 using Core.FinTech.Infrastructure.Helpers.AppSettings;
 using Core.FinTech.Infrastructure.Services.Abstracts;
@@ -11,10 +13,14 @@ namespace Core.FinTech.Infrastructure.Services.Implementations
   public class RWLService : IRWLService
   {
     private readonly ConfigOptions configOptions;
+    private readonly IUnitOfWork<DiscountWallet> dwUoW;
+    private readonly IUnitOfWork<UserProfile> userProfileUoW;
 
-    public RWLService(ConfigOptions configOptions)
+    public RWLService(ConfigOptions configOptions, IUnitOfWork<UserProfile> userProfileUoW, IUnitOfWork<DiscountWallet> dwUoW)
     {
       this.configOptions = configOptions;
+      this.userProfileUoW = userProfileUoW;
+      this.dwUoW = dwUoW;
     }
 
     public Task<bool> AcceptVoucher()
@@ -22,9 +28,21 @@ namespace Core.FinTech.Infrastructure.Services.Implementations
       throw new NotImplementedException();
     }
 
-    public Task<(float Partialdiscount, int numberOfFullDiscount)> ComputeDiscount(string RwlID)
+    public async Task<(decimal DiscountPercentage, int Multiple)> ComputeDiscount(string RwlID, int RwlMemberId)
     {
-      throw new NotImplementedException();
+      var user = userProfileUoW.Repository.Get(x => x.RwlMemberId == RwlMemberId).FirstOrDefault();
+      var wallet = dwUoW.Repository.Get(x => x.UserProfileId == user.Id).First();
+
+      var course = await GetCourseDetails(RwlID);
+
+      var courseCost = decimal.Parse(course.Data.ProgramFee);
+
+      var discount = (wallet.Balance / courseCost) * 100;
+      if(discount < 100)
+      {
+        return (discount, 0);
+      }
+      return (100, decimal.ToInt32(discount/100));
     }
 
     public Task<bool> ConfirmVoucherRequest(string RequestId)

@@ -42,6 +42,10 @@ namespace EdtechSim.Migrations
                     b.Property<DateTime?>("DeletedOn")
                         .HasColumnType("datetime(6)");
 
+                    b.Property<string>("ImageUrl")
+                        .IsRequired()
+                        .HasColumnType("longtext");
+
                     b.Property<bool>("IsActive")
                         .HasColumnType("tinyint(1)");
 
@@ -53,59 +57,22 @@ namespace EdtechSim.Migrations
 
                     b.Property<DateTime?>("LastUpdatedOn")
                         .HasColumnType("datetime(6)");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("longtext");
+
+                    b.Property<string>("Price")
+                        .IsRequired()
+                        .HasColumnType("longtext");
+
+                    b.Property<string>("RwlCode")
+                        .IsRequired()
+                        .HasColumnType("longtext");
 
                     b.HasKey("Id");
 
                     b.ToTable("Courses");
-                });
-
-            modelBuilder.Entity("Core.EdTech.Domain.Entities.DiscountWallet", b =>
-                {
-                    b.Property<Guid>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("char(36)");
-
-                    b.Property<decimal>("Balance")
-                        .HasColumnType("decimal(18, 2)");
-
-                    b.Property<Guid?>("CreatedBy")
-                        .HasColumnType("char(36)");
-
-                    b.Property<DateTime>("CreatedOn")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("datetime(6)")
-                        .HasDefaultValueSql("(UTC_TIMESTAMP)");
-
-                    b.Property<string>("Currency")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(50)");
-
-                    b.Property<Guid?>("DeletedBy")
-                        .HasColumnType("char(36)");
-
-                    b.Property<DateTime?>("DeletedOn")
-                        .HasColumnType("datetime(6)");
-
-                    b.Property<bool>("IsActive")
-                        .HasColumnType("tinyint(1)");
-
-                    b.Property<bool>("IsDeleted")
-                        .HasColumnType("tinyint(1)");
-
-                    b.Property<Guid?>("LastUpdatedBy")
-                        .HasColumnType("char(36)");
-
-                    b.Property<DateTime?>("LastUpdatedOn")
-                        .HasColumnType("datetime(6)");
-
-                    b.Property<Guid>("UserProfileId")
-                        .HasColumnType("char(36)");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("UserProfileId");
-
-                    b.ToTable("DiscountWallets");
                 });
 
             modelBuilder.Entity("Core.EdTech.Domain.Entities.Enrollment", b =>
@@ -286,8 +253,8 @@ namespace EdtechSim.Migrations
                         .HasMaxLength(32)
                         .HasColumnType("varchar(32)");
 
-                    b.Property<string>("RwlMemberId")
-                        .HasColumnType("longtext");
+                    b.Property<int?>("RwlMemberId")
+                        .HasColumnType("int");
 
                     b.HasKey("Id");
 
@@ -340,7 +307,12 @@ namespace EdtechSim.Migrations
                         .IsRequired()
                         .HasColumnType("longtext");
 
+                    b.Property<Guid>("UserProfileId")
+                        .HasColumnType("char(36)");
+
                     b.HasKey("Id");
+
+                    b.HasIndex("UserProfileId");
 
                     b.ToTable("Vouchers");
                 });
@@ -477,17 +449,6 @@ namespace EdtechSim.Migrations
                     b.ToTable("AspNetUserTokens", (string)null);
                 });
 
-            modelBuilder.Entity("Core.EdTech.Domain.Entities.DiscountWallet", b =>
-                {
-                    b.HasOne("Core.EdTech.Domain.Entities.UserProfile", "UserProfile")
-                        .WithMany()
-                        .HasForeignKey("UserProfileId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("UserProfile");
-                });
-
             modelBuilder.Entity("Core.EdTech.Domain.Entities.Enrollment", b =>
                 {
                     b.HasOne("Core.EdTech.Domain.Entities.Course", "Course")
@@ -503,6 +464,17 @@ namespace EdtechSim.Migrations
                         .IsRequired();
 
                     b.Navigation("Course");
+
+                    b.Navigation("UserProfile");
+                });
+
+            modelBuilder.Entity("Core.EdTech.Domain.Entities.Voucher", b =>
+                {
+                    b.HasOne("Core.EdTech.Domain.Entities.UserProfile", "UserProfile")
+                        .WithMany()
+                        .HasForeignKey("UserProfileId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
                     b.Navigation("UserProfile");
                 });

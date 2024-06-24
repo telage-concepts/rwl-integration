@@ -26,6 +26,18 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\NEWUSER\Documents\GitHub\rwl-integration\EdtechSim
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/NEWUSER/Documents/GitHub/rwl-integration/EdtechSim/Pages/CourseDetail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ291cnNlRGV0YWlsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/NEWUSER/Documents/GitHub/rwl-integration/EdtechSim/Pages/CourseManagement.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ291cnNlTWFuYWdlbWVudC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/NEWUSER/Documents/GitHub/rwl-integration/EdtechSim/Pages/DiscountProvider.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGlzY291bnRQcm92aWRlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/NEWUSER/Documents/GitHub/rwl-integration/EdtechSim/Pages/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 

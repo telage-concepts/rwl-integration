@@ -17,6 +17,6 @@ namespace Core.EdTech.Domain.Entities
     public string PhoneNumber { get; set; }
     [Required]
     public DateTime DateOfBirth { get; set; }
-    public string? RwlMemberId { get; set; }
+    public int? RwlMemberId { get; set; }
   }
 }

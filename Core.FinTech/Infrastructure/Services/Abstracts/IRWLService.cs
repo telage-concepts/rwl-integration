@@ -13,7 +13,7 @@ namespace Core.FinTech.Infrastructure.Services.Abstracts
     public Task<CourseDetails> GetCourseDetails(string ProgramCode);
     public Task<bool> RequestVoucher(RequestVoucherParams requestVoucherParams);
     public Task<bool> ConfirmVoucherRequest(string RequestId);
-    public Task<(float Partialdiscount, int numberOfFullDiscount)> ComputeDiscount(string RwlID);
+    public Task<(float DiscountPercentage, int Multiple)> ComputeDiscount(string RwlID, int RwlMemberId);
     public Task<bool> AcceptVoucher();
     public Task RedeemPoints(RedeemPointsParams redeemPointsParams);
   }

@@ -17,39 +17,25 @@ namespace EdtechSim.Pages
     private readonly ILogger<IndexModel> _logger;
     private readonly IRWLService _rdfService;
     private readonly IUnitOfWork<UserProfile> unitOfWork;
-    private readonly IUnitOfWork<DiscountWallet> dwUoW;
     private readonly UserManager<ApplicationUser> userManager;
+    private readonly ICourseManagementService courseManagementService;
 
+    public List<Course> AllCourses { get; set; }
     public UserProfile UserProfile { get; set; }
     public List<ServiceProviderResponse> ServiceProviderResponses { get; set; }
-    public List<SelectListItem> ServiceProviderSelectListItems { get; set; }
-    public DiscountWallet wallet { get; set; }
-    public IndexModel(ILogger<IndexModel> logger, IRWLService rdfService, IUnitOfWork<UserProfile> unitOfWork, IUnitOfWork<DiscountWallet> dwUoW, UserManager<ApplicationUser> userManager)
+    public IndexModel(ILogger<IndexModel> logger, IRWLService rdfService, IUnitOfWork<UserProfile> unitOfWork, UserManager<ApplicationUser> userManager, ICourseManagementService courseManagementService)
     {
       _logger = logger;
       _rdfService = rdfService;
       this.unitOfWork = unitOfWork;
-      this.dwUoW = dwUoW;
       this.userManager = userManager;
+      this.courseManagementService = courseManagementService;
     }
 
     public async Task<IActionResult> OnGetAsync()
     {
       var user = await userManager.GetUserAsync(User);
       UserProfile = unitOfWork.Repository.Get(x => x.Email == user.Email).FirstOrDefault();
-      wallet = dwUoW.Repository.Get(x => x.UserProfileId == UserProfile.Id).FirstOrDefault();
-      if(wallet == null)
-      {
-        await dwUoW.Repository.Insert(new DiscountWallet
-        {
-          UserProfileId = UserProfile.Id,
-          Currency = WalletCurrency.Naira,
-          Balance = 0
-        });
-
-        await dwUoW.SaveAsync();
-        wallet = dwUoW.Repository.Get(x => x.UserProfileId == UserProfile.Id).First();
-      }
 
       if (UserProfile.RwlMemberId == null)
       {
@@ -59,17 +45,11 @@ namespace EdtechSim.Pages
           FirstName = UserProfile.FirstName,
           LastName = UserProfile.LastName,
           PhoneNumber = UserProfile.PhoneNumber
-        })).RwlMemberId;
+        })).Data.RwlMemberId;
       }
 
-      ServiceProviderResponses = await _rdfService.GetServiceProviders(UserProfile.RwlMemberId);
 
-      ServiceProviderSelectListItems = new();
-
-      foreach(var provider in ServiceProviderResponses)
-      {
-        ServiceProviderSelectListItems.Add(new SelectListItem { Text = provider.ServiceProviderName, Value = provider.ServiceProviderId });
-      }
+      AllCourses = await courseManagementService.GetCourses();
       return Page();
     }
   }

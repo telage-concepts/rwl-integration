@@ -1,13 +1,13 @@
-using Core.EdTech.Domain.DataAccess.Interfaces;
-using Core.EdTech.Domain.Entities;
-using Core.EdTech.Infrastructure.Services.Abstracts;
+using Core.FinTech.Domain.DataAccess.Interfaces;
+using Core.FinTech.Domain.Entities;
+using Core.FinTech.Infrastructure.Services.Abstracts;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Core.EdTech.Infrastructure.Services.Implementations
+namespace Core.FinTech.Infrastructure.Services.Implementations
 {
   public class DiscountWalletManager : IDiscountWalletManager
   {
