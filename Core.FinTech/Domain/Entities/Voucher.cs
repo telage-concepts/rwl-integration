@@ -10,8 +10,9 @@ namespace Core.FinTech.Domain.Entities
   public class Voucher : EntityBase
   {
     public string Code { get; set; }
-    public string RequestId { get; set; }
     public Guid UserProfileId { get; set; }
     public UserProfile? UserProfile { get; set; }
+    public string ProgramName { get; set; }
+    public string ProgramCode { get; set; }
   }
 }

@@ -68,7 +68,7 @@ namespace FintechSim.Migrations
 
                     b.HasIndex("UserProfileId");
 
-                    b.ToTable("DiscountWallets");
+                    b.ToTable("DiscountWallets", (string)null);
                 });
 
             modelBuilder.Entity("Core.FinTech.Domain.Entities.Identity.ApplicationUser", b =>
@@ -189,7 +189,7 @@ namespace FintechSim.Migrations
 
                     b.HasIndex("UserProfileId");
 
-                    b.ToTable("Pouches");
+                    b.ToTable("Pouches", (string)null);
                 });
 
             modelBuilder.Entity("Core.FinTech.Domain.Entities.Request", b =>
@@ -226,7 +226,7 @@ namespace FintechSim.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Requests");
+                    b.ToTable("Requests", (string)null);
                 });
 
             modelBuilder.Entity("Core.FinTech.Domain.Entities.UserProfile", b =>
@@ -295,7 +295,7 @@ namespace FintechSim.Migrations
                     b.HasIndex("PhoneNumber")
                         .IsUnique();
 
-                    b.ToTable("UserProfiles");
+                    b.ToTable("UserProfiles", (string)null);
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole", b =>
